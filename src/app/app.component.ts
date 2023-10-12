@@ -23,6 +23,7 @@ export class AppComponent {
   @Output() public outputEvent = new EventEmitter<string>();
   public title = 'todo-list-16';
   public todoSignal!: WritableSignal<Array<Todo>>;
+  public renderTestMessage = false;
 
   constructor(private todoSignalsService: TodoSignalsService) {}
 
